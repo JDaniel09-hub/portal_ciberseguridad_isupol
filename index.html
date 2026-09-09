@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Ciberseguridad ISUPOL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="brand" href="#inicio" aria-label="Portal de Ciberseguridad">
+          <span class="brand-mark">
+            <svg viewBox="0 0 40 40" class="brand-icon" aria-hidden="true">
+              <path d="M20 2 L36 10 L36 21 C36 30 29 35 20 38 C11 35 4 30 4 21 L4 10 Z" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M14 20 L18 24 L27 13" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-title">CYBERTRACE</span>
+            <span class="brand-subtitle">ISUPOL · Investigación en Ciberdelitos</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav">
+          <a class="nav-link active" href="#inicio">INICIO</a>
+          <a class="nav-link" href="#arquitectura">ARQUITECTURA</a>
+          <a class="nav-link" href="#redes">REDES</a>
+          <a class="nav-link" href="#forense">FORENSE</a>
+          <a class="nav-link" href="#elementos">ELEMENTOS</a>
+        </nav>
+
+        <a class="header-button" href="#forense">
+          <span class="header-button-text">ANÁLISIS</span>
+          <span class="header-button-icon">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero-section" id="inicio">
+        <div class="section-line top-line"></div>
+        <div class="container hero-grid">
+          <section class="hero-copy" data-animate>
+            <div class="section-tag">
+              <span></span>
+              Informática Básica · Proyecto Académico
+            </div>
+
+            <h1>Portal de Ciberseguridad, Arquitectura de Computadores y Redes</h1>
+            <p class="hero-lede">
+              Este portal tiene como finalidad divulgar conocimientos sobre la arquitectura de computadores,
+              la estructura de las redes de comunicaciones y su aplicación en la investigación de ciberdelitos.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#arquitectura">
+                <span>Explorar contenidos</span>
+                <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+                  <path d="M5 12h14M13 3l9 9-9 9" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </a>
+              <button class="btn btn-secondary js-scan">
+                <span>Iniciar análisis</span>
+              </button>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric">
+                <span class="metric-value">01</span>
+                <span class="metric-label">Arquitectura</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">02</span>
+                <span class="metric-label">Redes</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">03</span>
+                <span class="metric-label">Forense</span>
+              </div>
+            </div>
+          </section>
+
+          <aside class="hero-visual" data-animate>
+            <div class="security-panel">
+              <div class="panel-top">
+                <span class="panel-title">SISTEMA / 24H</span>
+                <span class="panel-status">
+                  <span class="pulse-dot"></span>
+                  ONLINE
+                </span>
+              </div>
+
+              <div class="visual-stage">
+                <div class="orb-wrap">
+                  <div class="orb">
+                    <span class="orb-ring ring-one"></span>
+                    <span class="orb-ring ring-two"></span>
+                    <span class="orb-core">
+                      <svg viewBox="0 0 100 100" class="shield-icon" aria-label="Ciberseguridad">
+                        <path d="M50 8 L84 18 L84 55 C84 76 70 88 50 94 C30 88 16 76 16 55 L16 18 Z" fill="none" stroke="currentColor" stroke-width="2" />
+                        <path d="M50 30 L50 62 M33 46 L50 62 L69 35" fill="none" stroke="currentColor" stroke-width="3" />
+                      </svg>
+                    </span>
+                    <span class="scan-line"></span>
+                  </div>
+                </div>
+
+                <div class="data-map">
+                  <div class="map-row">
+                    <span class="map-label">01. FIREWALL</span>
+                    <span class="bars">
+                      <span></span><span></span><span></span><span></span>
+                    </span>
+                  </div>
+                  <div class="map-row">
+                    <span class="map-label">02. TRACE</span>
+                    <span class="bars">
+                      <span></span><span></span><span></span><span></span>
+                    </span>
+                  </div>
+                  <div class="map-row">
+                    <span class="map-label">03. PACKETS</span>
+                    <span class="bars">
+                      <span></span><span></span><span></span><span></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel-bottom">
+                <div>
+                  <span class="bottom-label">ESTADO</span>
+                  <span class="bottom-value">MONITOREO ACTIVO</span>
+                </div>
+                <div class="signal-bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-dark architecture-section" id="arquitectura">
+        <div class="container">
+          <div class="section-heading center" data-animate>
+            <span class="section-tag light">
+              <span></span>
+              Arquitectura y Estructura de Computadores
+            </span>
+            <h2>Arquitectura del sistema computacional</h2>
+            <p>
+              La computadora procesa información mediante una organización de componentes físicos y lógicos que separan,
+              coordinan y ejecutan el flujo de instrucciones.
+            </p>
+          </div>
+
+          <div class="architecture-grid">
+            <article class="info-card architecture-card" data-animate>
+              <span class="card-index">01</span>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" class="mini-icon">
+                  <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M8 19h8M12 17v2" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <h3>CPU: Unidad Central de Procesamiento</h3>
+              <p>
+                La CPU coordina el procesamiento de datos y la ejecución de instrucciones mediante componentes especializados.
+              </p>
+              <ul class="feature-list">
+                <li><strong>ALU:</strong> ejecuta operaciones aritméticas y lógicas.</li>
+                <li><strong>UC:</strong> interpreta instrucciones y organiza el flujo de datos.</li>
+                <li><strong>Registros:</strong> almacenan datos temporales y direcciones.</li>
+              </ul>
+            </article>
+
+            <article class="info-card architecture-card" data-animate>
+              <span class="card-index">02</span>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" class="mini-icon">
+                  <path d="M5 5h14v14H5z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M9 9h6v6H9z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <h3>Ciclo de instrucción</h3>
+              <p>
+                Las instrucciones se leen, decodifican y ejecutan en un flujo cíclico controlado por la unidad de control.
+              </p>
+              <div class="instruction-cycle">
+                <span class="cycle-node active">FETCH</span>
+                <span class="cycle-arrow">→</span>
+                <span class="cycle-node">DECODE</span>
+                <span class="cycle-arrow">→</span>
+                <span class="cycle-node">EXECUTE</span>
+              </div>
+              <div class="cycle-detail">
+                <span>Fetch</span>
+                <span>Decode</span>
+                <span>Execute</span>
+              </div>
+            </article>
+
+            <article class="info-card architecture-card" data-animate>
+              <span class="card-index">03</span>
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" class="mini-icon">
+                  <path d="M4 8h7l3-4 3 4h7v13H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <h3>Jerarquía de memoria</h3>
+              <p>
+                El almacenamiento se organiza por velocidad y capacidad, desde registros hasta medios secundarios.
+              </p>
+              <div class="memory-stack">
+                <div class="memory-row">
+                  <span class="memory-label">Registros</span>
+                  <span class="memory-bar bar-fast"></span>
+                </div>
+                <div class="memory-row">
+                  <span class="memory-label">Caché</span>
+                  <span class="memory-bar bar-mid"></span>
+                </div>
+                <div class="memory-row">
+                  <span class="memory-label">RAM</span>
+                  <span class="memory-bar bar-ram"></span>
+                </div>
+                <div class="memory-row">
+                  <span class="memory-label">Almacenamiento</span>
+                  <span class="memory-bar bar-storage"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="comparison-grid">
+            <article class="comparison-card" data-animate>
+              <h4>Registros</h4>
+              <p>Almacenamiento muy rápido y de acceso directo para instrucciones y datos temporales.</p>
+            </article>
+            <article class="comparison-card" data-animate>
+              <h4>Memoria caché</h4>
+              <p>Reduce el tiempo de acceso al contenido más solicitado por la CPU.</p>
+            </article>
+            <article class="comparison-card" data-animate>
+              <h4>Memoria RAM</h4>
+              <p>Almacena datos y programas activos durante la ejecución del sistema.</p>
+            </article>
+            <article class="comparison-card" data-animate>
+              <h4>Almacenamiento secundario</h4>
+              <p>Persiste datos de forma estable en disco o memoria no volátil.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section networks-section" id="redes">
+        <div class="container">
+          <div class="section-heading left" data-animate>
+            <span class="section-tag">
+              <span></span>
+              Fundamentos de Redes de Comunicaciones
+            </span>
+            <h2>Redes informáticas y conectividad</h2>
+            <p>
+              Una red informática permite la interconexión de equipos para compartir recursos, datos y servicios de forma organizada y segura.
+            </p>
+          </div>
+
+          <div class="network-grid">
+            <article class="info-card network-card" data-animate>
+              <span class="card-index">RED-01</span>
+              <h3>Definición de red</h3>
+              <p>
+                Una red informática es un conjunto de dispositivos interconectados mediante protocolos y medios de transmisión que
+                permiten intercambio de información.
+              </p>
+            </article>
+
+            <article class="info-card network-card" data-animate>
+              <span class="card-index">RED-02</span>
+              <h3>Importancia</h3>
+              <p>
+                Las redes permiten la comunicación entre equipos, la colaboración institucional, el acceso a servicios y
+                la gestión centralizada de información.
+              </p>
+            </article>
+
+            <article class="info-card network-card" data-animate>
+              <span class="card-index">RED-03</span>
+              <h3>Componentes</h3>
+              <div class="component-list">
+                <div class="component-row">
+                  <span class="component-icon">R</span>
+                  <span>Router</span>
+                </div>
+                <div class="component-row">
+                  <span class="component-icon">S</span>
+                  <span>Switch</span>
+                </div>
+                <div class="component-row">
+                  <span class="component-icon">D</span>
+                  <span>Servidores</span>
+                </div>
+                <div class="component-row">
+                  <span class="component-icon">F</span>
+                  <span>Dispositivos finales</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="ip-mac-panel" data-animate>
+            <div class="panel-title-row">
+              <h3>Dirección IP y Dirección MAC</h3>
+              <span class="panel-code">PROTOCOLO TCP/IP</span>
+            </div>
+
+            <div class="ip-mac-grid">
+              <article class="ip-card">
+                <span class="ip-card-label">DIRECCIÓN IP</span>
+                <h4>Qué es</h4>
+                <p>Identifica una interfaz de red dentro de una red lógica o de Internet.</p>
+                <div class="ip-card-list">
+                  <span>Características</span>
+                  <ul>
+                    <li>Se asigna a nodos.</li>
+                    <li>Puede ser pública o privada.</li>
+                    <li>Soporta enrutamiento.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="ip-card">
+                <span class="ip-card-label">DIRECCIÓN MAC</span>
+                <h4>Qué es</h4>
+                <p>Identifica físicamente una tarjeta de red en la capa de enlace de datos.</p>
+                <div class="ip-card-list">
+                  <span>Características</span>
+                  <ul>
+                    <li>Es un identificador fijo.</li>
+                    <li>Se usa dentro de una LAN.</li>
+                    <li>Se relaciona con el hardware.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <div class="table-wrap">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Aspecto</th>
+                    <th>Dirección IP</th>
+                    <th>Dirección MAC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Capas</td>
+                    <td>Red / Transporte</td>
+                    <td>Enlace de datos</td>
+                  </tr>
+                  <tr>
+                    <td>Identifica</td>
+                    <td>Dispositivo en red</td>
+                    <td>Tarjeta de red</td>
+                  </tr>
+                  <tr>
+                    <td>Función</td>
+                    <td>Enrutamiento y comunicación</td>
+                    <td>Entrega local de tramas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="topologies" data-animate>
+            <div class="topology-head">
+              <h3>Topologías físicas</h3>
+              <span class="topology-badge">Infraestructura</span>
+            </div>
+            <div class="topology-grid">
+              <article class="topology-card">
+                <span class="topology-icon">✦</span>
+                <h4>Estrella</h4>
+                <p>Todos los nodos conectados a un punto central como switch o hub.</p>
+                <ul>
+                  <li>Ventaja: fácil administración.</li>
+                  <li>Desventaja: falla central afecta red.</li>
+                </ul>
+              </article>
+              <article class="topology-card">
+                <span class="topology-icon">◎</span>
+                <h4>Anillo</h4>
+                <p>Los equipos están conectados en secuencia, formando un camino circular.</p>
+                <ul>
+                  <li>Ventaja: estructura ordenada.</li>
+                  <li>Desventaja: alta dependencia de cada enlace.</li>
+                </ul>
+              </article>
+              <article class="topology-card">
+                <span class="topology-icon">▥</span>
+                <h4>Bus</h4>
+                <p>Todos los nodos comparten un mismo medio de transmisión.</p>
+                <ul>
+                  <li>Ventaja: simple y económico.</li>
+                  <li>Desventaja: colisiones y falla de canal.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section forensics-section" id="forense">
+        <div class="container">
+          <div class="section-heading center" data-animate>
+            <span class="section-tag light">
+              <span></span>
+              Investigación de Ciberdelitos
+            </span>
+            <h2>Aplicación en informática forense</h2>
+            <p>
+              El conocimiento técnico de la computadora y las redes es esencial para reconstruir eventos, recopilar evidencia y analizar incidentes.
+            </p>
+          </div>
+
+          <div class="forensics-grid">
+            <article class="forensic-card" data-animate>
+              <span class="forensic-icon">
+                <svg viewBox="0 0 24 24" class="mini-icon">
+                  <path d="M4 7h16v10H4z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M6 20h12" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <h3>Memoria RAM</h3>
+              <p>
+                La RAM permite obtener evidencia volátil como procesos activos, conexiones abiertas,
+                archivos temporales y datos de sesión.
+              </p>
+            </article>
+
+            <article class="forensic-card" data-animate>
+              <span class="forensic-icon">
+                <svg viewBox="0 0 24 24" class="mini-icon">
+                  <path d="M5 4h14v16H5z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M8 8h8M8 12h8M8 16h5" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <h3>Registros del procesador</h3>
+              <p>
+                Los registros ayudan a comprender el flujo de la ejecución de instrucciones y el contexto del procesamiento.
+              </p>
+            </article>
+
+            <article class="forensic-card" data-animate>
+              <span class="forensic-icon">
+                <svg viewBox="0 0 24 24" class="mini-icon">
+                  <path d="M3 11a9 9 0 0 1 18 0v4a9 9 0 0 1-18 0z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M7 15h10" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </span>
+              <h3>Tráfico de red</h3>
+              <p>
+                El tráfico permite analizar conexiones sospechosas, protocolos, mensajes, puertos y patrones de comunicación.
+              </p>
+            </article>
+          </div>
+
+          <div class="forensic-process">
+            <div class="process-card" data-animate>
+              <span class="process-step">01</span>
+              <div>
+                <h4>Extracción de evidencia digital</h4>
+                <p>Se identifican y preservan artefactos relevantes de memoria, archivos, registros y tráfico.</p>
+              </div>
+            </div>
+            <div class="process-card" data-animate>
+              <span class="process-step">02</span>
+              <div>
+                <h4>Análisis forense</h4>
+                <p>Se correlacionan datos para reconstruir cronologías y establecer relaciones entre eventos.</p>
+              </div>
+            </div>
+            <div class="process-card" data-animate>
+              <span class="process-step">03</span>
+              <div>
+                <h4>Investigación de incidentes</h4>
+                <p>Se evalúa el alcance, la causa probable y los mecanismos utilizados en la actividad sospechosa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section extra-section" id="elementos">
+        <div class="container">
+          <div class="section-heading center" data-animate>
+            <span class="section-tag">
+              <span></span>
+              Elementos del Sistema
+            </span>
+            <h2>Panel de observación</h2>
+          </div>
+
+          <div class="extra-grid">
+            <article class="extra-card" data-animate>
+              <div class="extra-card-header">
+                <span class="extra-card-label">SEÑALES</span>
+                <span class="extra-card-icon">+</span>
+              </div>
+              <h3>Monitoreo</h3>
+              <p>Se registran eventos de red, integridad de equipos y flujo de datos.</p>
+              <button class="btn btn-tertiary toggle-details">
+                <span>Ver detalle</span>
+              </button>
+              <div class="hidden-details">
+                <p>Captura de actividad institucional, módulos de detección y correlación.</p>
+              </div>
+            </article>
+
+            <article class="extra-card" data-animate>
+              <div class="extra-card-header">
+                <span class="extra-card-label">EVIDENCIA</span>
+                <span class="extra-card-icon">×</span>
+              </div>
+              <h3>Cadena de custodia</h3>
+              <p>Los artefactos deben preservarse, documentarse y relacionarse de manera segura.</p>
+              <button class="btn btn-tertiary toggle-details">
+                <span>Ver detalle</span>
+              </button>
+              <div class="hidden-details">
+                <p>Se identifican fuentes de información para validación y trazabilidad.</p>
+              </div>
+            </article>
+
+            <article class="extra-card" data-animate>
+              <div class="extra-card-header">
+                <span class="extra-card-label">INTELIGENCIA</span>
+                <span class="extra-card-icon">□</span>
+              </div>
+              <h3>Incidentes</h3>
+              <p>Categorización, análisis y respuesta frente a actividades sospechosas.</p>
+              <button class="btn btn-tertiary toggle-details">
+                <span>Ver detalle</span>
+              </button>
+              <div class="hidden-details">
+                <p>Se priorizan amenazas, patrones de ataque y servicios afectados.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <span class="brand-mark small">
+              <svg viewBox="0 0 40 40" class="brand-icon">
+                <path d="M20 2 L36 10 L36 21 C36 30 29 35 20 38 C11 35 4 30 4 21 L4 10 Z" fill="none" stroke="currentColor" stroke-width="2" />
+                <path d="M14 20 L18 24 L27 13" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <span class="brand-copy">
+              <span class="brand-title">CYBERTRACE</span>
+              <span class="brand-subtitle">Ciberseguridad Académica</span>
+            </span>
+          </a>
+        </div>
+        <div class="footer-copy">
+          <span>Elaborado por:</span>
+          <span>Jairo Daniel Chamorro Sacón</span>
+          <span>Investigación en Ciberdelitos</span>
+          <span>Informática Básica</span>
+        </div>
+        <div class="footer-social">
+          <a href="#inicio" class="footer-link">Inicio</a>
+          <a href="#arquitectura" class="footer-link">Arquitectura</a>
+          <a href="#redes" class="footer-link">Redes</a>
+          <a href="#forense" class="footer-link">Forense</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
