@@ -297,11 +297,36 @@ body.menu-open {
 }
 
 .hero-lede {
-  margin: 24px 0 30px;
+  margin: 24px 0 12px;
   color: var(--text-soft);
   font-size: 18px;
   line-height: 1.75;
   max-width: 680px;
+}
+
+.student-signature {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 28px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--card-border);
+  max-width: 680px;
+}
+
+.student-label {
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.student-name {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .hero-actions {
